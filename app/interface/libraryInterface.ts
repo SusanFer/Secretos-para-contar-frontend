@@ -1,5 +1,7 @@
-export interface LibraryInterface {
+export interface Libro {
     id: number;
-    name: string;
-    image: string;
-}
+    titulo: string;
+    descripcion: string;
+    imagen: string;
+    enlace: string;
+  }
