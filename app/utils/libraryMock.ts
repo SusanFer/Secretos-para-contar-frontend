@@ -1,18 +1,159 @@
-import { LibraryInterface } from "~/interface/libraryInterface";
+import { LibraryInterface } from "../interface/libraryInterface";
 
 export const libraryMock: LibraryInterface[] = [
     {
         id: 1,
-        name: "Cien años de soledad",
-        image: "/mockImage/Cuentos-y-pasatiempos.webp"
+        name: "A que te cojo ratón",
+        image: "/mockImage/A-que-te-cojo-raton.png",
+        author: "",
+        available: true,
+        downloadUrl: "www.descarga.com",
+        viewUrl: "www.vista.com",
+        description: "Este libro es una oportunidad para ejercitar el pensamiento a partir de divertidos juegos y actividades que nos pueden ayudar a desarrollar habilidades como la lógica, la observación, la atención y la memoria. Así que prepárate para pensar, jugar, imaginar, soñar, calcular, analizar, deducir y, sobre todo, gozar. Pero ten en cuenta que para jugar hay que entrenarse. ",
     },
-    { id: 2, name: "Don Quijote de la Mancha", image: "/mockImage/Entre-cuento-y-cuento.webp"},
-    { id: 3, name: "El amor en los tiempos del cólera", image: "/mockImage/Erase-una-vez.webp" },
-    { id: 4, name: "1984", image: "/mockImage/Erase-una-vez.webp" },
-    { id: 5, name: "Crónica de una muerte anunciada", image: "/mockImage/Erase-una-vez.webp" },
-    { id: 6, name: "Rayuela", image: "/mockImage/Erase-una-vez.webp" },
-    { id: 7, name: "Fahrenheit 451", image: "/mockImage/Erase-una-vez.webp" },
-    { id: 8, name: "Matar a un ruiseñor", image: "/mockImage/Erase-una-vez.webp" },
-    { id: 9, name: "La sombra del viento", image: "/mockImage/Erase-una-vez.webp" },
-    { id: 10, name: "Orgullo y prejuicio", image: "/mockImage/Erase-una-vez.webp" }
+    {
+        id: 2,
+        name: "Con los pelos de punta",
+        image: "/mockImage/Con-los-pelos-de-punta.png",
+        author: "",
+        available: false,
+        downloadUrl: "www.descarga.com",
+        viewUrl: "www.vista.com",
+        description: "Este libro reúne leyendas de monstruos y criaturas fantásticas. Con él, queremos llevar a los niños y familias la posibilidad de reencontrarse con las viejas leyendas de Colombia y el mundo, con los cuentos contados a la luz de innumerables fogatas. Estas historias, que se han transmitido de generación en generación desde hace siglos o, incluso, milenios, sirven para viajar en el tiempo y conocer las costumbres y creencias de otras épocas. ",
+    },
+    {
+        id: 3,
+        name: "Cuentos maravillosos",
+        image: "/mockImage/Cuentos-maravillosos.png",
+        author: "",
+        available: true,
+        downloadUrl: "www.descarga.com",
+        viewUrl: "www.vista.com",
+        description: "Este libro es una recopilación de esos cuentos clásicos europeos que han marcado muchas generaciones y que han atravesado todas las fronteras. Cuentos de los hermanos Grimm, de Perrault y de Andersen que viven en el imaginario de millones de personas y que portan mensajes poderosos que nos sirven para comprender el mundo y la vida de gran parte de la humanidad. ",
+    },
+    {
+        id: 4,
+        name: "Cuentos para desenredar enredos",
+        image: "/mockImage/Cuentos-para-desenredar-enredos.png",
+        author: "",
+        available: true,
+        downloadUrl: "www.descarga.com",
+        viewUrl: "www.vista.com",
+        description: "Este es un libro que nos invita a reflexionar antes de actuar, a tratar de resolver los conflictos entre nosotros, a ponernos en el lugar del otro y, sobre todo, a dialogar y a escuchar. Es una invitación a que nos despojemos de los apasionamientos, a que analicemos con transparencia y honestidad las circunstancias que vivimos y a tomar mejores decisiones. También nos muestra el camino para que, en caso de no poder solucionar los conflictos entre nosotros, podamos acudir a la autoridad competente para que nos ayude a solucionarlos. ",
+    },
+    {
+        id: 5,
+        name: "Cuentos y pasatiempos",
+        image: "/mockImage/Cuentos-y-pasatiempos.png",
+        author: "",
+        available: false,
+        downloadUrl: "www.descarga.com",
+        viewUrl: "www.vista.com",
+        description: "Cuentos y pasatiempos es un recorrido literario por las relaciones interpersonales. Cuentos y poemas sobre la pareja, la paternidad y la maternidad, los hermanos, las abuelas, los amigos y los vecinos. Un libro ideal para la lectura de los niños, donde los textos, además de ofrecer lindas reflexiones sobre las relaciones que tejemos con los otros, nos entretienen con historias divertidas y conmovedoras.",
+    },
+    {
+        id: 6,
+        name: "Del campo a la mesa",
+        image: "/mockImage/Del-campo-a-la-mesa.png",
+        author: "",
+        available: true,
+        downloadUrl: "www.descarga.com",
+        viewUrl: "www.vista.com",
+        description: "Este libro es una invitación a reencontrarnos con una gran variedad de alimentos y recetas, a conocer nuevas formas de preparar los alimentos cotidianos; a conocer, conservar, cultivar y emplear otras especies vegetales para variar recetas en la dieta alimenticia; y a aumentar la diversidad de productos, con nuevos sabores, formas, colores y nutrientes. También contiene consejos y recomendaciones sobre nutrición, y sobre las porciones y forma de consumir alimentos según el momento del día. ",
+    },
+    {
+        id: 7,
+        name: "Entre cuento y cuento",
+        image: "/mockImage/Entre-cuento-y-cuento.png",
+        author: "",
+        available: false,
+        downloadUrl: "www.descarga.com",
+        viewUrl: "www.vista.com",
+        description: "Este libro reúne algunas obras de los mejores cuentistas de la literatura universal y pretende que en cada hogar las familias se entusiasmen con la lectura y revivan la magia de aquellas noches contando historias a la luz de una vela o fogata. ",
+    },
+    {
+        id: 8,
+        name: "Erase una vez",
+        image: "/mockImage/Erase-una-vez.png",
+        author: "",
+        available: true,
+        downloadUrl: "www.descarga.com",
+        viewUrl: "www.vista.com",
+        description: "Este es un libro para inspirarse a cumplir los sueños, una invitación a amar lo que hacemos. Un libro que nos da ejemplos de historias de personas que, gracias a su empeño, compromiso y dedicación, lograron llegar lejos, alcanzar sus metas y dejarle un legado a nuestra sociedad.",
+    },
+    {
+        id: 9,
+        name: "La finca viva",
+        image: "/mockImage/La-finca-viva.png",
+        author: "",
+        available: true,
+        downloadUrl: "www.descarga.com",
+        viewUrl: "www.vista.com",
+        description: "La finca viva es una invitación a producir en armonía con la Naturaleza. Explora las necesidades, saberes, talentos y gustos de las familias campesinas para poder realizar el diseño y planificación de sus parcelas. Habla sobre la importancia de los bosques nativos, el cuidado de las fuentes de agua, el diseño hidrológico de la finca y las prácticas agrícolas ancestrales. Luego aborda el cuidado de los animales domésticos: su alimentación, casas, remedios naturales y reproducción, y nos invita a proteger la fauna silvestre señalándonos su importancia dentro de los ecosistemas. ",
+    },
+    {
+        id: 10,
+        name: "La tierra, el cielo y más allá",
+        image: "/mockImage/La-tierra-el-cielo-y-mas-alla.png",
+        author: "",
+        available: true,
+        downloadUrl: "www.descarga.com",
+        viewUrl: "www.vista.com",
+        description: "Este libro es un fragmento narrado del cielo y más allá, repleto de estrellas y planetas, de nubes, eclipses, relámpagos y lunas que podremos llevar en la mochila sin que pesen mucho. En él encontraremos el universo contado por la ciencia, y también algunas breves historias indígenas sobre el cosmos. Con este libro buscamos crear conciencia sobre el hecho de que no somos el centro del universo, somos apenas un punto azul en la vasta arena cósmica.",
+    },
+    {
+        id: 11,
+        name: "Los secretos de las plantas",
+        image: "/mockImage/Los-secretos-de-las-plantas.png",
+        author: "",
+        available: true,
+        downloadUrl: "www.descarga.com",
+        viewUrl: "www.vista.com",
+        description: `Un libro de consulta con 3 propósitos fundamentales:
+            1. Dar a conocer las propiedades curativas de 50 plantas medicinales, y la forma más práctica de usarlas y de aprovechar sus beneficios. Plantas reconocidas dentro del vademécum del Ministerio de Salud por sus propiedades en la prevención y tratamiento de enfermedades comunes. 
+
+            2. Una guía donde están las dolencias más comunes, y cómo tratarlas con alguna de las 50 plantas que propone el libro. 
+
+            3. Dar a conocer las preparaciones básicas que se pueden hacer con estas plantas y mostrar cómo se deben almacenar para tenerlas siempre a mano cuando se necesiten. `
+    },
+    {
+        id: 12,
+        name: "Los secretos de los animales",
+        image: "/mockImage/Los-secretos-de-los-animales.png",
+        author: "",
+        available: true,
+        downloadUrl: "www.descarga.com",
+        viewUrl: "www.vista.com",
+        description: "Este libro cuenta lo sorprendente de la vida animal, que nos demuestra que el hombre no es el único ser que piensa, siente y aprende. Es una invitación a observar los animales, a conocerlos y a reconocer sus hábitos y costumbres; a mirar a nuestro alrededor y a contemplar las especies que viven cerca de nosotros, en los jardines, en las afueras del pueblo, en los campos y bosques cercanos. Animales a los que debemos aprender a querer y respetar y a atender, pues con ellos compartimos nuestra única casa: la tierra, y en ella cabemos todos. "
+    },
+    {
+        id: 13,
+        name: "Los viajes del viejo Jacobo",
+        image: "/mockImage/Los-viajes-del-viejo-Jacobo.png",
+        author: "",
+        available: true,
+        downloadUrl: "www.descarga.com",
+        viewUrl: "www.vista.com",
+        description: "El viejo Jacobo nos lleva en un viaje por la historia, las costumbres y las curiosidades de diferentes culturas del mundo. Además, nos presenta los alfabetos utilizados en cada una de ellas. Con él buscamos ampliar el horizonte y la visión del mundo de nuestros lectores, a partir de hechos que pueden ser comparables con los de su propia cotidianidad. "
+    },
+    {
+        id: 14,
+        name: "Más claro no canta un gallo",
+        image: "/mockImage/Mas-claro-no-canta-un-gallo.png",
+        author: "",
+        available: true,
+        downloadUrl: "www.descarga.com",
+        viewUrl: "www.vista.com",
+        description: "Rimas, juegos, versos, adivinanzas, coplas y trabalenguas: este libro se construyó a partir de una compilación realizada en las 9 subregiones del departamento de Antioquia, en la que se obtuvieron alrededor de 5.000 registros de la tradición oral viva que hoy se escucha y canta en el campo. En esta compilación encontraremos la expresión popular de cantos que salen a relucir en las escuelas, o cuando en cualquier potrero, camino o fonda, un trovero saca su tiple y echa mano de su talento o su memoria para traerlas a cuento. "
+    },
+    {
+        id: 15,
+        name: "Salud para contar",
+        image: "/mockImage/Salud-para-contar.png",
+        author: "",
+        available: true,
+        downloadUrl: "www.descarga.com",
+        viewUrl: "www.vista.com",
+        description: "Este es un libro para todos los hogares y para todas las bibliotecas. Un libro que nos lleva a hacer un recorrido por el cuerpo humano y nos va a ayudar a estar mejor y a vivir una vida plena; uno que nos enseñará cómo resolver una emergencia médica cuando nos encontramos lejos de un centro de salud. "
+    }
 ]
