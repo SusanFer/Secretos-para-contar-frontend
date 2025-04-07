@@ -1,9 +1,12 @@
 import BookList from "../home/BookList";
+import Layout from "~/components/Layout";
 
 export default function LibrosRoute() {
   return (
-    <div className="container mx-auto py-8">
-      <BookList />
-    </div>
+    <Layout>
+      <div className="container mx-auto py-8 pt-20">
+        <BookList />
+      </div>
+    </Layout>
   );
 }
