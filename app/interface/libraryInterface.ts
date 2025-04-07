@@ -1,4 +1,4 @@
-export interface LibraryInterface {
+export interface Libro {
     id: number;
     name: string;
     image: string;
