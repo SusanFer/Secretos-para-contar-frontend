@@ -1,4 +1,4 @@
-import { Link } from "@remix-run/react";
+import { Link, Outlet, useLocation } from "@remix-run/react";
 import BookList from "./BookList";
 
 // Header component
@@ -50,10 +50,14 @@ function Header() {
 
 // Main Home component
 function Home() {
+    const location = useLocation();
+
     return (
         <div>
             <Header />
-            <BookList />
+            {/* Conditionally render BookList if the route is /libros */}
+            {location.pathname === "/libros" && <BookList />}
+            <Outlet />
         </div>
     );
 }
